@@ -105,7 +105,9 @@ Manager_Coaching_Portal/
 ├── src/
 │   ├── __init__.py
 │   └── db.py             # DB schema, seed data, trigger logic, helpers
-└── main.py               # Streamlit app
+├── main.py               # Streamlit app
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -113,21 +115,21 @@ Manager_Coaching_Portal/
 ## Core Database Tables
 
 - **TeamStructures**
-  - Org mapping: `mapping_id`, `agent_id`, `manager_id`, `branch_code`, `effective_date`.
+  - `mapping_id`, `agent_id`, `manager_id`, `branch_code`, `effective_date`.
 
 - **QuizResults**
-  - Raw quiz attempts: `result_id`, `agent_id`, `module_id`, `score`, `is_pass`, `interaction_speed`, `finished_timestamp`.
+  - `result_id`, `agent_id`, `module_id`, `score`, `is_pass`, `interaction_speed`, `finished_timestamp`.
 
 - **ModuleLearningProgress**
-  - Module state per agent: `(agent_id, module_id)` → `state` (`Not Start Yet`, `Active`, `Finished`, `Locked_Pending_Coaching`).
+  - `(agent_id, module_id)` → `state` (`Not Start Yet`, `Active`, `Finished`, `Locked_Pending_Coaching`).
 
 - **AgentLearningStatus**
-  - Overall health per agent: `agent_id` → `status` (`Healthy`, `Warning`, `Locked`).
+  - `agent_id` → `status` (`Healthy`, `Warning`, `Locked`).
 
 - **ModuleStateLocks**
-  - Lock records per module: `lock_id`, `agent_id`, `module_id`, `lock_reason`, `locked_timestamp`, `is_locked`, `failing_question`, `ai_feedback`.
+  - `lock_id`, `agent_id`, `module_id`, `lock_reason`, `locked_timestamp`, `is_locked`, `failing_question`, `ai_feedback`.
 
 - **CoachingInterventions**
-  - Coaching audit trail: `intervention_id`, `lock_id`, `manager_id`, `manager_notes_text`, `unlocked_timestamp`.
+  - `intervention_id`, `lock_id`, `manager_id`, `manager_notes_text`, `unlocked_timestamp`.
 
 ---
