@@ -9,7 +9,7 @@ The backend is a lightweight **SQLite trigger engine** that decides when an agen
 
 and records a full audit trail of each unlock.
 
-**Streamlit app link** (Online/Download not required): https://kgimanagercoachingporta1.streamlit.app/
+**Streamlit app link** (Online, download is not required): https://kgimanagercoachingporta1.streamlit.app/ \
 Please switch to **light theme** for better text visibility.
 
 ---
