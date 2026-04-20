@@ -133,3 +133,15 @@ Manager_Coaching_Portal/
   - `intervention_id`, `lock_id`, `manager_id`, `manager_notes_text`, `unlocked_timestamp`.
 
 ---
+
+## Default Settings
+
+- **Personnel and Module**
+  - **1 manager**, **10 agents**, and **1 module**, where the manager's `agent_id = 1`, the agents' `agent_id = 2 ~ 10`, and `module_id = 1`.
+
+- **Other Default Values**
+  - TeamStructures: `branch_code = 'BR001'`, `effective_date = '2026-04-17'`.
+  - QuizResults: `interaction_speed = 1`.
+  - ModuleStateLocks: `failing_question = 'Failing Question'`, `ai_feedback = 'AI Feedback'`.
+
+---
