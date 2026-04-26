@@ -109,7 +109,7 @@ with tab1:
 
 **Status Info:**  
 Healthy: Agent is learning normally.  
-Warning: Agent has a 70 < rolling score < 80. (Total quizzes taken > 3)  
+Warning: Agent has a 70 < rolling score < 80. (Total quizzes taken ≥ 3)  
 Locked: Agent failed a certain module for 3 consecutive times, or has a rolling score < 70.
     """
 
